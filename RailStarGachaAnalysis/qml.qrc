@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>src/commonUi/GAWindow.qml</file>
+        <file>src/topPage/GAMenuArea.qml</file>
+        <file>src/basic/BasicConfig.qml</file>
+        <file>src/basic/qmldir</file>
+        <file>src/bottomPage/BottomPageArea.qml</file>
+        <file>src/bottomPage/pages/GAInputAnalysis.qml</file>
+        <file>src/commonUi/GAText.qml</file>
+        <file>src/commonUi/GATextArea.qml</file>
+        <file>src/commonUi/GAButton.qml</file>
+        <file>src/bottomPage/pages/GAHistoryAnalysis.qml</file>
+        <file>src/bottomPage/pages/GAAbout.qml</file>
+        <file>src/analysisPage/AnalysisArea.qml</file>
+        <file>src/analysisPage/BottomArea.qml</file>
+        <file>src/analysisPage/TopArea.qml</file>
+        <file>src/commonUi/GASlideMenuBtn.qml</file>
+        <file>src/commonUi/GALoadingPopup.qml</file>
+        <file>src/commonUi/GASuccessPopup.qml</file>
+        <file>src/commonUi/FontGrade.qml</file>
+    </qresource>
+</RCC>

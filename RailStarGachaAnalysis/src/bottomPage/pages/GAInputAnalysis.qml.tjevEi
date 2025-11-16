@@ -1,0 +1,46 @@
+import QtQuick 2.9
+import "../../basic"
+import "../../commonUi"
+
+Item {
+
+    GAText {
+        id: title
+        anchors {
+            top: parent.top
+            horizontalCenter: parent.horizontalCenter
+            topMargin: 25
+        }
+
+        font.pixelSize: BasicConfig.inputAnalysisTitleSize
+        text: qsTr("请在下方输入链接")
+    }
+
+    GATextArea {
+        id: textArea
+
+        anchors {
+            top: title.bottom
+            horizontalCenter: parent.horizontalCenter
+            topMargin: 25
+        }
+
+        width: parent.width * 0.65
+        height: parent.height * 0.5
+    }
+
+    GAButton {
+        anchors {
+            top: textArea.bottom
+            horizontalCenter: parent.horizontalCenter
+            topMargin: 25
+        }
+
+        width: textArea.width * 0.6
+        height: 50
+
+        onClicked: {
+            Parser.Start("111")
+        }
+    }
+}

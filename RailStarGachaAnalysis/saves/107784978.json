@@ -1,0 +1,83 @@
+{
+    "all_gacha": [
+        {
+            "gacha_infos": [
+                {
+                    "consume": 60,
+                    "item_type": "光锥",
+                    "name": "如泥酣眠",
+                    "time": "2025-09-03 01:20:52"
+                }
+            ],
+            "gacha_type": "ConstGacha"
+        },
+        {
+            "gacha_infos": [
+            ],
+            "gacha_type": "LinkageGacha"
+        },
+        {
+            "gacha_infos": [
+            ],
+            "gacha_type": "LinkageWepGacha"
+        },
+        {
+            "gacha_infos": [
+            ],
+            "gacha_type": "NewbieGacha"
+        },
+        {
+            "gacha_infos": [
+                {
+                    "consume": 71,
+                    "item_type": "角色",
+                    "name": "符玄",
+                    "time": "2025-07-02 13:05:52"
+                },
+                {
+                    "consume": 62,
+                    "item_type": "角色",
+                    "name": "白厄",
+                    "time": "2025-07-02 18:34:16"
+                },
+                {
+                    "consume": 76,
+                    "item_type": "角色",
+                    "name": "白露",
+                    "time": "2025-11-07 20:09:52"
+                },
+                {
+                    "consume": 44,
+                    "item_type": "角色",
+                    "name": "风堇",
+                    "time": "2025-11-07 20:12:49"
+                },
+                {
+                    "consume": 60,
+                    "item_type": "角色",
+                    "name": "昔涟",
+                    "time": "2025-11-07 20:14:03"
+                }
+            ],
+            "gacha_type": "UpGacha"
+        },
+        {
+            "gacha_infos": [
+                {
+                    "consume": 69,
+                    "item_type": "光锥",
+                    "name": "但战斗还未结束",
+                    "time": "2025-07-16 01:41:23"
+                },
+                {
+                    "consume": 34,
+                    "item_type": "光锥",
+                    "name": "爱如此刻永恒",
+                    "time": "2025-11-07 20:14:35"
+                }
+            ],
+            "gacha_type": "UpWeaponGacha"
+        }
+    ],
+    "uid": "107784978"
+}

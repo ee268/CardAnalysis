@@ -1,0 +1,82 @@
+import QtQuick 2.14
+import QtQuick.Controls 2.14
+import "../basic"
+import "../commonUi"
+
+Item {
+    width: parent.width
+    height: mainCol.height
+
+    Column {
+        id: mainCol
+
+        anchors {
+            left: parent.left
+            right: parent.right
+            top: parent.top
+        }
+
+        GASlideMenuBtn {
+            id: menuBtns
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width / 2
+            height: 80
+            menuTexts: BasicConfig.analysisMenuTitleTexts
+            clickedEventId: "analysisMenu"
+        }
+
+        Column {
+            spacing: 20
+            topPadding: 10
+
+            Repeater {
+                model: 1
+                delegate: Row {
+                    id: contentRow
+                    spacing: 20
+                    leftPadding: 15
+                    rightPadding: 15
+
+                    Rectangle {
+                        width: contentRow.width * 0.25
+                        height: width + 20
+                        color: "green"
+                    }
+
+                    Column {
+                        spacing: 15
+
+                        GAText {
+                            text: qsTr("xilian")
+                            font.pixelSize: 25
+                            color: "#FCCE52"
+                        }
+
+                        // Row {
+                        //     spacing: 10
+
+                        //     Rectangle {
+                        //         width: contentRow.width * 0.5
+                        //         height: 50
+                        //         color: "pink"
+                        //     }
+
+                        //     GAText {
+                        //         text: qsTr("10")
+                        //         font.pixelSize: 25
+                        //         color: "black"
+                        //     }
+                        // }
+                    }
+
+                    Rectangle {
+                        width: contentRow.width * 0.25
+                        height: width
+                        radius: height
+                        color: "red"
+                    }
+                }
+            }
+        }
+    }
+}

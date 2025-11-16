@@ -1,0 +1,107 @@
+{
+    "all_gacha": [
+        {
+            "gacha_infos": [
+                {
+                    "consume": 14,
+                    "item_type": "角色",
+                    "name": "瓦尔特",
+                    "time": "2025-06-24 13:09:13"
+                },
+                {
+                    "consume": 79,
+                    "item_type": "光锥",
+                    "name": "银河铁道之夜",
+                    "time": "2025-11-05 11:45:00"
+                }
+            ],
+            "gacha_type": "ConstGacha"
+        },
+        {
+            "gacha_infos": [
+            ],
+            "gacha_type": "LinkageGacha"
+        },
+        {
+            "gacha_infos": [
+            ],
+            "gacha_type": "LinkageWepGacha"
+        },
+        {
+            "gacha_infos": [
+            ],
+            "gacha_type": "NewbieGacha"
+        },
+        {
+            "gacha_infos": [
+                {
+                    "consume": 35,
+                    "item_type": "角色",
+                    "name": "希儿",
+                    "time": "2025-05-21 11:14:14"
+                },
+                {
+                    "consume": 23,
+                    "item_type": "角色",
+                    "name": "风堇",
+                    "time": "2025-05-21 11:15:01"
+                },
+                {
+                    "consume": 58,
+                    "item_type": "角色",
+                    "name": "白厄",
+                    "time": "2025-07-02 10:14:34"
+                },
+                {
+                    "consume": 78,
+                    "item_type": "角色",
+                    "name": "姬子",
+                    "time": "2025-07-02 11:54:09"
+                },
+                {
+                    "consume": 79,
+                    "item_type": "角色",
+                    "name": "刻律德菈",
+                    "time": "2025-09-02 15:20:00"
+                },
+                {
+                    "consume": 81,
+                    "item_type": "角色",
+                    "name": "长夜月",
+                    "time": "2025-10-08 15:52:42"
+                },
+                {
+                    "consume": 80,
+                    "item_type": "角色",
+                    "name": "刃",
+                    "time": "2025-11-05 10:05:44"
+                },
+                {
+                    "consume": 65,
+                    "item_type": "角色",
+                    "name": "昔涟",
+                    "time": "2025-11-05 11:32:02"
+                }
+            ],
+            "gacha_type": "UpGacha"
+        },
+        {
+            "gacha_infos": [
+                {
+                    "consume": 67,
+                    "item_type": "光锥",
+                    "name": "黎明恰如此燃烧",
+                    "time": "2025-07-02 10:15:37"
+                },
+                {
+                    "consume": 10,
+                    "item_type": "光锥",
+                    "name": "爱如此刻永恒",
+                    "time": "2025-11-05 12:50:48"
+                }
+            ],
+            "gacha_type": "UpWeaponGacha"
+        }
+    ],
+    "uid": "146289086"
+}

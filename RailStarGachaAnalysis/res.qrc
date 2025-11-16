@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>style/appIcon.ico</file>
+        <file>style/bg/3.7versionCover.png</file>
+        <file>style/font/AaSiHaSiHaShouXieTi-2.ttf</file>
+        <file>style/poup/loading.gif</file>
+        <file>style/poup/success.png</file>
+        <file>style/github-mark.png</file>
+    </qresource>
+</RCC>

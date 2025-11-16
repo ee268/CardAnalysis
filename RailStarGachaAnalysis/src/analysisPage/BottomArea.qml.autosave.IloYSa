@@ -1,0 +1,125 @@
+import QtQuick 2.14
+import QtQuick.Controls 2.14
+import "../basic"
+import "../commonUi"
+
+Item {
+    id: rootItem
+    height: mainCol.height
+
+    Column {
+        id: mainCol
+
+        anchors {
+            left: parent.left
+            right: parent.right
+            top: parent.top
+        }
+
+        GASlideMenuBtn {
+            id: menuBtns
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width / 2
+            height: 80
+            menuTexts: BasicConfig.analysisMenuTitleTexts
+            clickedEventId: "analysisMenu"
+        }
+
+        Column {
+            spacing: 20
+            topPadding: 5
+            anchors.horizontalCenter: parent.horizontalCenter
+
+            Repeater {
+                model: 1
+                delegate: Rectangle {
+                    width: rootItem.width - 30
+                    height: contentRow.height
+
+                    border {
+                        width: 1
+                        color: "#f9f9f9"
+                    }
+                    color: Qt.rgba(137, 137, 137, 0.69)
+                    radius: 5
+
+                    Row {
+                        id: contentRow
+                        anchors.centerIn: parent
+                        spacing: 20
+                        padding: 10
+
+                        Rectangle {
+                            width: rootItem.width * 0.1
+                            height: width + 50
+                            color: "green"
+                        }
+
+                        Column {
+                            spacing: 15
+                            anchors.verticalCenter: parent.verticalCenter
+
+                            GAText {
+                                padding: 0
+                                text: qsTr("xilian")
+                                font.pixelSize: 40
+                                color: "black"
+                            }
+
+                            Row {
+                                spacing: 20
+
+                                Rectangle {
+                                    id: progress
+                                    width: rootItem.width * 0.7
+                                    height: 40
+                                    radius: height
+
+                                    gradient: Gradient {
+                                        orientation: Gradient.Horizontal
+                                        GradientStop {
+                                            id: color1
+                                            position: 0.0
+                                            color: "#d4fc79"
+                                        }
+                                        GradientStop {
+                                            id: color2
+                                            position: 1.0
+                                            color: "#96e6a1"
+                                        }
+                                    }
+                                }
+
+                                GAText {
+                                    anchors.verticalCenter: parent.verticalCenter
+                                    text: qsTr("10")
+                                    font.pixelSize: 25
+                                    color: "black"
+                                }
+
+                                Rectangle {
+                                    anchors.verticalCenter: parent.verticalCenter
+                                    width: progress.height
+                                    height: width
+                                    radius: height
+                                    color: "transparent"
+                                    border {
+                                        width: 3
+                                        color: "red"
+                                    }
+
+                                    GAText {
+                                        anchors.centerIn: parent
+                                        text: qsTr("歪")
+                                        color: "red"
+                                        font.pixelSize: parent.width - 13
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

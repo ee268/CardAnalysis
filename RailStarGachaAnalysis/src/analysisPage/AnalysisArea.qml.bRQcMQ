@@ -1,0 +1,36 @@
+import QtQuick 2.14
+import "../basic"
+
+Item {
+    Rectangle {
+        anchors {
+            fill: parent
+            topMargin: BasicConfig.topMenuAreaMargin
+            leftMargin: BasicConfig.topMenuAreaMargin
+            rightMargin: BasicConfig.topMenuAreaMargin
+            bottomMargin: BasicConfig.topMenuAreaMargin
+        }
+        color: BasicConfig.mainAreaColor
+        radius: BasicConfig.mainAreaRadius
+
+        Flickable {
+            id: flickable
+            anchors.fill: parent
+            contentHeight: col.implicitHeight
+
+            Column {
+                id: col
+
+                TopArea {
+                    width: flickable.width
+                }
+
+                BottomArea {
+                    width: flickable.width
+                    height: 1000
+                }
+
+            }
+        }
+    }
+}
